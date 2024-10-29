@@ -1,0 +1,120 @@
+<!DOCTYPE html><html><head>
+      <title>sindy</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\Joaquin\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.8.14\crossnote\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="sindragosa">Sindragosa </h1>
+<p>En mi opinión, esta es la pelea más justa del juego, ya que todos salen igualmente perjudicados.</p>
+<p>Esta pelea tiene 2.5 fases.</p>
+<h2 id="habilidades">Habilidades </h2>
+<h3 id="fase-1-p1">Fase 1 (P1) </h3>
+<ul>
+<li>
+<p><strong>Aura de Escarcha (Frost Aura)</strong>: Hace daño a todo el equipo. Cúrense.</p>
+</li>
+<li>
+<p><strong>Habilidades de Dragón</strong>:</p>
+<ul>
+<li><strong>Rajar</strong>: Es un ataque en área.</li>
+<li><strong>Aliento de Escarcha (Frost Breath)</strong>: Esta habilidad hace mucho daño, especialmente en la Fase 2. Los tanques deben rotar sus habilidades defensivas para resistir esta habilidad (en la Fase 1 es menos crucial, pero en la Fase 2 es obligatorio).</li>
+<li><strong>Machaque de cola (Tail Smash)</strong>: Deadly Boss Mods (DBM) anunciará cuando se produzca un Machaque de cola, el cual empujará hacia atrás y hará mucho daño. La zona de impacto del Machaque de cola comienza en el centro de Sindragosa, por lo que es importante que los DPS de melé se mantengan a distancia máxima de ataque cuerpo a cuerpo.</li>
+</ul>
+</li>
+<li>
+<p><strong>Frío Virulento (Blistering Cold)</strong>: Todos serán atraídos hacia Sindragosa, quien empezará a canalizar una habilidad llamada Frío Virulento. Al terminar, causará daño en área a todos dentro de 25 yardas, así que todos deben alejarse lo más rápido posible.</p>
+<ul>
+<li>Caballeros de la Muerte y Pícaros pueden ignorar el Frío Virulento usando Barrera Antimagia (AMS) y Amago/Capa de las Sombras. Los Cazadores deben usar Disparo de Dispersión cuando sean atraídos, y los Brujos su Portal Demoníaco para teletransportarse. Protección Divina (HoP) puede cancelar la atracción de Sindragosa, así que los Paladines deberían usarlo en los hechiceros de un solo objetivo (como los Magos).</li>
+</ul>
+</li>
+<li>
+<p><strong>Escalofrío Penetrante (Permeating Chill)</strong>: Es un efecto de daño en el tiempo (DoT) que tiene una probabilidad de aplicarse al golpear a Sindragosa con un ataque cuerpo a cuerpo, llamado Congelado hasta los Huesos (Chilled to the Bone). Los DPS de melé pueden acumular muchas cargas, pero si se acumulan en exceso (10 o más), deberían usar una habilidad defensiva (Muro de Escudo, Burbuja, Capa de las Sombras, Piel de Corteza, etc.). Es especialmente importante usar defensivos cuando tienes muchas cargas y eres atraído por un Frío Virulento, ya que los sanadores no podrán detenerse a curarte.</p>
+</li>
+<li>
+<p><strong>Magia Desencadenada (Unchained Magic)</strong>: DBM anuncia cuando se lanza. Es un debilitador de 30 segundos que se aplica a 3 sanadores y 3 DPS mágicos en modo 25 jugadores. Cada vez que lanzas una habilidad, ganas otro debilitador llamado Inestabilidad (Instability). Cada carga de Inestabilidad te hace daño cuando expira el debilitador. En la Fase 1, puedes llegar a tener hasta 10 cargas sin problemas, pero en la Fase 2 no deberías arriesgarte tanto porque los sanadores estarán ocupados. Los Sacerdotes de las Sombras pueden acumular más cargas ya que pueden usar Dispersión.</p>
+<p>Si se aproxima un Frío Virulento o la Fase Aérea, asegúrate de no tener cargas de Inestabilidad; deja que expiren antes de ser atraído o atrapado en una tumba.</p>
+</li>
+</ul>
+<h3 id="fase-aérea">Fase Aérea </h3>
+<p>Sindragosa volará al aire, a una posición en la que los DPS de rango no podrán atacarla. Esta fase ocurre dos veces por combate; si sucede una tercera vez, el grupo se enfrentará a un enrage (rabia).</p>
+<p>Después de volar, lanzará <strong>Tumbas de Escarcha</strong> sobre 2 jugadores en modo 10 jugadores, o 5 en modo 25. Estos jugadores deben moverse a posiciones predeterminadas: 2 tumbas apiladas a la izquierda, 2 a la derecha y 1 al centro. Es importante no apilar 3 tumbas una sobre otra, ya que podrían morir rápidamente.</p>
+<p>Cualquiera que esté cerca de la tumba cuando aterrice también será congelado, así que mantente alejado de las tumbas.</p>
+<p>Como deberías posicionarte normalmente:<br>
+<img src="./imgs/sindy1.png" alt="">!</p>
+<p>Como deberías posicionarte en la fase aérea<br>
+<img src="./imgs/sindy2.png" alt="">!</p>
+<ul>
+<li><strong>Bombas de Escarcha (Frost Bombs)</strong>: Durante la Fase Aérea, Sindragosa también lanzará Bombas de Escarcha. Se puede ver dónde caerán gracias a un círculo grande en el suelo. Hacen mucho daño, casi suficiente para eliminar a una persona, así que evita ser alcanzado. Para no ser golpeado, escóndete detrás de las tumbas.</li>
+</ul>
+<p>Bomba de Escarcha:<br>
+<img src="./imgs/sindy3.png" alt="">!</p>
+<p>Después de cuatro bombas, Sindragosa bajará, rompe las tumbas y vuelve a DPSear a Sindragosa.</p>
+<h3 id="fase-2-p2">Fase 2 (P2) </h3>
+<p>En esta fase, ya no habrá Fase Aérea, pero todas las habilidades de la Fase 1 seguirán aplicándose.</p>
+<ul>
+<li><strong>Sacudida Mística (Mystic Buffet)</strong>: Es una habilidad que lanza cada pocos segundos y aumenta el daño mágico recibido en un 10% por acumulación. Por este debilitador, los jugadores tendrán que ser más cuidadosos con sus debuffs, y los tanques tendrán que alternarse. Puedes eliminar este debuff si sales de la línea de visión de Sindragosa escondiéndote detrás de una Tumba de Escarcha.</li>
+</ul>
+<h4 id="tumbas-de-escarcha-en-fase-2">Tumbas de Escarcha en Fase 2 </h4>
+<p>La secuencia de tumbas sigue un orden predeterminado, alternando entre el lado del cuerpo y el lado de la cabeza de Sindragosa. El primer y segundo conjunto de tumbas se colocan en el lado del cuerpo, el tercero en el lado de la cabeza, y así sucesivamente.</p>
+<p><img src="./imgs/sindy4.png" alt=""></p>
+<h2 id="cómo-manejar-las-tumbas">Cómo manejar las tumbas </h2>
+<p>En algún momento, las tumbas deben morir, pero no solo hay que matarlas sin pensar. Quieres tener una tumba en el cuerpo lista para cuando se esté por producir un Frío Desgarrador, así los DPS a distancia no serán atraídos.</p>
+<ol>
+<li>
+<p>La primera tumba va hacia el cuerpo y la destruimos al instante.</p>
+</li>
+<li>
+<p>La segunda tumba va al cuerpo y la MANTENEMOS, no la matamos porque un Frío Desgarrador sucederá poco después de que la segunda tumba aterrice. Matamos esta tumba DESPUÉS de que termine el Frío Desgarrador, no durante el lanzamiento ni antes, sino después.</p>
+<p>Dado que la segunda tumba está en el cuerpo, la tercera tumba necesitará ir a otro lugar que no sea el cuerpo, por eso existe la posición en la cabeza. La segunda tumba irá allí y deberá ser destruida después del Frío Desgarrador. Como la persona que tiene la tercera tumba se alejará de la tumba del medio, no podrá tener línea de visión del Frío Desgarrador y podría ser atraída hacia el grupo de melé antes de que la tumba aterrice si el tiempo es malo, así que dale Protección Divina (HoP) a esa persona, eso evitará que sea atraída.</p>
+</li>
+<li>
+<p>Después del Frío Desgarrador, mata ambas tumbas.</p>
+</li>
+<li>
+<p>Tratamos la cuarta y la quinta tumba igual que la primera.</p>
+</li>
+<li>
+<p>La sexta tumba es igual que la segunda (MANTENLA).</p>
+</li>
+<li>
+<p>La séptima tumba va a la cabeza.</p>
+</li>
+<li>
+<p>Después del Frío Desgarrador, matamos las tumbas sexta y séptima.</p>
+</li>
+</ol>
+<p>Si el jefe está al 10% de vida o menos y no tenemos más acumulaciones de Sacudida Místico, la gente se irá a China/África, lo que significa que se alejarán del grupo, no importa dónde, solo salgan, no mataremos estas tumbas, simplemente nos enfocaremos en matar al jefe y esperaremos que lo logremos.</p>
+<p>Si el jefe está al 10% o menos pero aún tenemos algunas acumulaciones de Sacudida Místico, tendremos una tumba más en el cuerpo, todos deben estar detrás de esta tumba ya que estaremos eliminando las acumulaciones de Sacudida Místico. Después de eliminar las acumulaciones, matamos la tumba y atacamos al jefe con todo.</p>
+<p>Si el jefe todavía está por encima del 10% de vida, continuaremos haciendo tumbas hasta alcanzar el 10% de vida. Si no logramos bajar al jefe en las próximas 2 tumbas, probablemente fracasaremos por enrage.</p>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
