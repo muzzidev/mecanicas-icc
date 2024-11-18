@@ -1,0 +1,436 @@
+<!DOCTYPE html><html><head>
+      <title>lk</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\Joaquin\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.8.15\crossnote\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="el-fucking-rey-exánime">El Fucking Rey Exánime </h1>
+<p>Tiene 3 fases y 2 fases de transición.</p>
+<h2 id="habilidades">Habilidades: </h2>
+<h3 id="fase-1">Fase 1: </h3>
+<ul>
+<li><strong>Infestar</strong></li>
+<li><strong>Invocar necrófagos</strong> (Summon Ghouls)</li>
+<li><strong>Invocar Horror Espantoso</strong> (Summon Shambling Horror)</li>
+<li><strong>Enfurecer</strong> (Enrage)</li>
+<li><strong>Onda de choque</strong> (Shockwave)</li>
+<li><strong>Peste Necrótica</strong> (Necrotic Plague)</li>
+</ul>
+<h3 id="transiciones">Transiciones: </h3>
+<ul>
+<li><strong>Invierno Implacable</strong> (Remorseless Winter)</li>
+<li><strong>Dolor y Sufrimiento</strong> (Pain and Suffering)</li>
+<li><strong>Esfera de Hielo</strong> (Ice Sphere)</li>
+<li><strong>Espíritu Furioso</strong> (Raging Spirit)</li>
+<li><strong>Grito del Alma</strong> (Soul Shriek)</li>
+<li><strong>Sacudida</strong> (Quake)</li>
+</ul>
+<h3 id="fase-2-p2">Fase 2 (P2): </h3>
+<ul>
+<li><strong>Infest</strong></li>
+<li><strong>Segador de Almas</strong> (Soul Reaper)</li>
+<li><strong>Val’kyrs</strong></li>
+<li><strong>Profanar</strong> (Defile)</li>
+</ul>
+<h3 id="fase-3-p3">Fase 3 (P3): </h3>
+<ul>
+<li><strong>Profanar</strong> (Defile)</li>
+<li><strong>Segador de Almas</strong> (Soul Reaper)</li>
+<li><strong>Cosechar Alma</strong> (Harvest Soul)</li>
+<li><strong>Espíritus Viles</strong> (Vile Spirits)</li>
+</ul>
+<hr>
+<h2 id="fase-1-posicionamientos">Fase 1: Posicionamientos </h2>
+<img src="imgs/LK1.png" alt="" srcset="">
+<p>Inicialmente, el Off Tank estará en el mismo lugar que el grupo cuerpo a cuerpo. Después de la primera oleada de necrófagos, el Off Tank tratará de ganar agro de tantos como sea posible y luego se moverá a su posición asignada.</p>
+<p>El Rey Exánime comienza ganando agro en la base de las escaleras, por lo que el tanque principal debe provocarlo, junto con cazadores y pícaros usando <strong>Misdirection</strong> (MD) y <strong>Tricks of the Trade</strong> (ToT). Si eres un DK, puedes usar <strong>Muerte y Descomposición</strong> 10 segundos antes de iniciar el combate para ganar más agro.</p>
+<hr>
+<h2 id="habilidades-de-p1">Habilidades de P1: </h2>
+<h3 id="infest"><strong>Infest</strong> </h3>
+<p>Esta es la primera habilidad que lanza LK. Aplica un DoT a todos en la banda que solo desaparece si el objetivo tiene la vida al máximo.<br>
+Dado que es una habilidad canalizada, los sanadores deben preverlo y curar anticipadamente.</p>
+<ul>
+<li>Los sacerdotes disciplina deben usar escudos preventivamente (<strong>Power Word: Shield</strong>) en toda la banda antes de cada <em>Infest</em>. Este es su trabajo principal en P1 y P2.</li>
+<li>Dado que el primer <em>Infest</em> llega muy pronto, los sacerdotes deben empezar a escudar antes del combate, aproximadamente 18 segundos antes.</li>
+<li>Si hay un druida restauración, usar HoTs previamente también ayuda.</li>
+</ul>
+<h3 id="invocar-necrófagos"><strong>Invocar Necrófagos</strong> </h3>
+<p>LK invocará 3 necrófagos durante P1.<br>
+No los ataques inmediatamente, el Off Tank debe ganar agro.<br>
+Después de la primera oleada, puedes atacarlos con <em>cleaves</em>.</p>
+<h3 id="invocar-horror-espantoso"><strong>Invocar Horror Espantoso</strong> </h3>
+<p>Esto es un <em>vargul</em>. El Off Tank debe recogerlo de inmediato y posicionarlo de espaldas al grupo de rango y cuerpo a cuerpo.</p>
+<ul>
+<li><strong>Onda de choque</strong>: Es una habilidad que puede matar de un golpe a cualquier DPS, razón por la cual debes posicionarlo de espaldas al grupo.</li>
+<li><strong>Enfurecer</strong>: Incrementa su daño un 200%, lo que pone en peligro al Off Tank. Esto debe ser disipado inmediatamente por un cazador con <strong>Disparo Tranquilizante</strong> (Tranquilizing Shot).</li>
+</ul>
+<h4 id="macro-para-disparo-tranquilizante">Macro para Disparo Tranquilizante: </h4>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token comment">#showtooltip Tranquilizing Shot  </span>
+/stopcasting  
+/cast <span class="token punctuation">[</span>@mouseover<span class="token punctuation">]</span> Tranquilizing Shot
+</code></pre><h2 id="fase-1-uso-de-disparo-tranquilizante">Fase 1: Uso de Disparo Tranquilizante </h2>
+<ul>
+<li>Utiliza un macro de <em>mouseover</em> para aplicar <strong>Disparo Tranquilizante</strong> a los <strong>Shamblings</strong> cuando se enfurezcan.</li>
+<li>El tiempo entre enfurecimientos es suficiente para que el Disparo Tranquilizante esté listo nuevamente.</li>
+<li>Antes de la primera transición, solo deberían aparecer 2 Shamblings:
+<ul>
+<li>El segundo Shambling debe ser recogido rápidamente por el tanque secundario (OT). Si aparece en una posición incómoda (ej. detrás de un pilar), un cazador debería usar <strong>Redirección (MD)</strong> hacia el OT.</li>
+<li>Los DPS cuerpo a cuerpo deben tener cuidado si el Shambling aparece cerca del jefe para evitar cleaves.</li>
+</ul>
+</li>
+</ul>
+<h3 id="enfurecimiento-enrage">Enfurecimiento (Enrage) </h3>
+<ul>
+<li>Cuando haya dos Shamblings, habrá dos enfurecimientos casi consecutivos (4-6 segundos de diferencia).
+<ul>
+<li>Aplica Disparo Tranquilizante al primero.</li>
+<li>El OT debe aturdir al segundo para ganar tiempo y luego aplicar Disparo Tranquilizante.</li>
+</ul>
+</li>
+</ul>
+<h4 id="nota">Nota: </h4>
+<ul>
+<li>El primer enfurecimiento de cada Shambling no aparecerá en DBM. Deben estar atentos a cuando el Shambling se vuelva grande y rojo. Los siguientes enfurecimientos sí tendrán un temporizador.</li>
+</ul>
+<hr>
+<h2 id="plaga-necrótica">Plaga Necrótica </h2>
+<p><strong>Mecánica:</strong></p>
+<ul>
+<li><strong>Debuff</strong> que afecta a un jugador:
+<ul>
+<li>Inflige 50k de daño tras 5 segundos.</li>
+<li>Si el debuff expira o el jugador muere, se acumula y salta a una unidad cercana (10 yardas).</li>
+<li>Cada salto aumenta un 2% el daño de ataque de LK.</li>
+</ul>
+</li>
+</ul>
+<h3 id="estrategia">Estrategia: </h3>
+<ol>
+<li>Si tienes Plaga Necrótica:
+<ul>
+<li>Corre hacia el OT.</li>
+<li><strong>Evita posicionarte frente al Shambling</strong> para no recibir el <strong>Shockwave</strong>.</li>
+</ul>
+</li>
+<li>Los healers deben disipar rápidamente:
+<ul>
+<li>Si el debuff salta al Shambling, un ghoul o el OT, estará bien posicionado.</li>
+<li>Si salta al OT, debe disiparse inmediatamente o pedir ayuda.</li>
+</ul>
+</li>
+<li><strong>Control de Ghouls:</strong>
+<ul>
+<li>El OT debe mantener 4 ghouls como máximo. Esto permite que la plaga salte entre los ghouls y el Shambling para acumularse.</li>
+<li>Tener demasiados ghouls reduce la probabilidad de que la plaga salte a los Shamblings, lo que alarga la fase de transición.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="primera-transición-70-hp">Primera Transición (70% HP) </h2>
+<p><strong>Habilidad principal:</strong></p>
+<ul>
+<li><strong>Invierno Implacable (Remorseless Winter):</strong>
+<ul>
+<li>LK lanza esta habilidad desde el centro de la arena.</li>
+<li>Todos deben moverse al borde para evitar el área de daño.</li>
+</ul>
+</li>
+</ul>
+<h3 id="posicionamiento">Posicionamiento: </h3>
+<img src="imgs/LK2.png" alt="" srcset="">
+<ol>
+<li>
+<p><strong>Antes de eliminar Shamblings y Ghouls:</strong></p>
+<ul>
+<li>Apilarse estratégicamente para maximizar DPS y control.</li>
+<li>Evitar recibir golpes frontales.</li>
+</ul>
+</li>
+<li>
+<p><strong>Después de eliminarlos:</strong><br>
+<img src="imgs/LK3.png" alt="" srcset="">
+<ul>
+<li>OT debe posicionarse lejos del grupo para disiparse.</li>
+</ul>
+</li>
+</ol>
+<h4 id="raging-spirits">Raging Spirits: </h4>
+<ul>
+<li>Aparecen sobre jugadores aleatorios, aturdiéndolos brevemente.</li>
+<li>Estos adds pueden matar a los DPS rápidamente. Se recomienda:
+<ul>
+<li>Usar <strong>Redirección (MD)</strong> y <strong>Trucos del comercio (ToT)</strong> según el orden establecido.</li>
+<li>En 25-man, asignar un cazador y un pícaro para cada Raging Spirit.</li>
+<li>En 10-man, un cazador o pícaro debería manejar el 1º y 3º Spirit en la primera transición, y el 2º y 4º en la segunda.</li>
+</ul>
+</li>
+<li><strong>Frontal AoE - Soul Shriek:</strong>
+<ul>
+<li>Mantén los Raging Spirits alejados del grupo.</li>
+<li>Los tanques deben recibir el daño frontal, y los healers disipar el silencio.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="daños-y-control-en-transición">Daños y Control en Transición: </h2>
+<ol>
+<li>
+<p><strong>Dolor y Sufrimiento (Pain and Suffering):</strong></p>
+<ul>
+<li>Afecta a jugadores aleatorios y aplica un <strong>debuff acumulativo</strong> que aumenta el daño recibido.</li>
+<li>Los DPS y healers deben esparcirse para minimizar los efectos.</li>
+</ul>
+</li>
+<li>
+<p><strong>Esferas de Hielo (Ice Spheres):</strong></p>
+<ul>
+<li>Las orbes se generan y se dirigen a jugadores aleatorios.</li>
+<li>Si impactan, empujan fuera de la plataforma, causando muerte instantánea.</li>
+<li>Asignar DPS a distancia (ej. Sacerdotes Sombras) para ralentizar y destruir las orbes antes de que lleguen al grupo.</li>
+</ul>
+</li>
+<li>
+<p><strong>DPS al LK:</strong></p>
+<ul>
+<li>Durante esta fase, solo los magos deberían dañar al jefe debido a su mayor alcance.</li>
+<li>Los magos deben tener cuidado con el aggro; se recomienda usar <strong>Intervenir (Warriors)</strong> y <strong>Salvación (Paladines)</strong>.</li>
+</ul>
+</li>
+</ol>
+<h3 id="fin-de-la-transición">Fin de la Transición: </h3>
+<ul>
+<li>La transición dura 1 minuto. Después, comienza la <strong>Fase 2</strong>.</li>
+</ul>
+<h3 id="fase-2">FASE 2 </h3>
+<p>Tan pronto como comience la <strong>Fase 2</strong>, la plataforma en la que estabas se colapsará. La banda debe moverse a la plataforma principal para continuar la pelea.</p>
+<hr>
+<h4 id="posicionamiento-1"><strong>Posicionamiento</strong> </h4>
+<ul>
+<li>El <strong>tanque principal (MT)</strong> lleva al <strong>Rey Exánime (LK)</strong> al centro de la plataforma.</li>
+<li>El <strong>off-tank (OT)</strong> se encargará del Espíritu Furioso restante. Espera a que lance <strong>Grito de Alma</strong> antes de reposicionarlo hacia el centro, pero manteniéndolo de espaldas al grupo para evitar silencias en área.</li>
+<li>Después de que el Espíritu Furioso muera, el OT se agrupa con los DPS principales y los sanadores para las mecánicas de Val'kyr y Profanar.<br>
+<img src="imgs/LK4.png" alt="" srcset="">
+</ul>
+<hr>
+<h4 id="habilidades-en-la-fase-2"><strong>Habilidades en la Fase 2</strong> </h4>
+<p><strong>1. Infestar</strong></p>
+<ul>
+<li>Funciona igual que en la Fase 1:
+<ul>
+<li>Los <em><strong>DISCOS!!!</strong></em> deben pre-lanzar escudos y pre-lanzar sanaciones en el tiempo (<em><strong>ÁRBOLES</strong></em>) para mitigar el daño.</li>
+<li>Asegúrate de que la salud de todos esté completa para eliminar el efecto de daño prolongado (DoT).</li>
+</ul>
+</li>
+</ul>
+<p><strong>2. Val'kyrs</strong></p>
+<ul>
+<li>
+<p><strong>Normal de 10 jugadores:</strong> Aparece 1 Val'kyr.</p>
+</li>
+<li>
+<p><strong>Normal de 25 jugadores:</strong> Aparecen 3 Val'kyrs y seleccionan miembros de la banda al azar.</p>
+</li>
+<li>
+<p>Las Val'kyrs agarran a un jugador e intentan lanzarlo fuera de la plataforma. Este jugador no puede actuar mientras está atrapado.</p>
+</li>
+<li>
+<p><strong>Posicionamiento para Val'kyrs:</strong></p>
+<ul>
+<li>Todos los jugadores (<strong>excepto Brujos</strong>) deben apilarse juntos para garantizar que las Val'kyrs aparezcan juntas y puedan ser golpeadas con habilidades de área.</li>
+<li>Si las Val'kyrs no están juntas, se moverán en diferentes direcciones, reduciendo la eficiencia del DPS.</li>
+</ul>
+</li>
+<li>
+<p><strong>Ralentizar y aturdir a las Val'kyrs:</strong></p>
+<ul>
+<li>Usa Trampas de Escarcha, Cono de Frío, Tifón y Aullido Perforador para ralentizarlas.</li>
+<li>Usa <strong>Martillo de Justicia</strong> y <strong>Cólera Sagrada</strong> en rotación para aturdirlas. Sigue un orden planificado para evitar rendimientos decrecientes.</li>
+<li>No uses aturdimientos a menos que estés asignado.</li>
+</ul>
+</li>
+<li>
+<p><strong>¡¡Caso especial!! :</strong> Si un Brujo es atrapado, ignora a esa Val'kyr. El Brujo puede teletransportarse de regreso usando su <strong>Círculo Demoníaco</strong>.</p>
+</li>
+</ul>
+<p><strong>3. Segador de Almas</strong></p>
+<ul>
+<li>LK apunta al MT con esta habilidad devastadora para tanques.
+<ul>
+<li><strong>Golpe inicial:</strong> Inflige 50% de daño con arma.</li>
+<li><strong>Perjuicio:</strong> Después de 5 segundos, inflige un gran daño de Sombra y otorga al LK un 50% de velocidad de ataque aumentada.</li>
+</ul>
+</li>
+<li>Los tanques deben tener una rotación de habilidades defensivas para mitigar el daño:
+<ul>
+<li>Usa <strong>Mano de Sacrificio</strong> u otros enfriamientos externos.</li>
+<li>Los tanques deben avisar cuándo necesitan mitigación para garantizar la supervivencia.</li>
+</ul>
+</li>
+</ul>
+<p><strong>4. Profanar</strong></p>
+<ul>
+<li>
+<p>Una zona de vacío que se expande cada vez que inflige daño. Aparece en un miembro de la banda aleatorio.<br>
+<img src="imgs/LK5.png" alt="" srcset="">
+</li>
+<li>
+<p><strong>Mecánicas clave:</strong></p>
+<ul>
+<li>El jugador objetivo debe <strong>moverse inmediatamente</strong> a los bordes de la sala para colocar Profanar.</li>
+<li><strong>Dispérsense</strong> justo antes de que se lance Profanar para asegurarse de que no caiga en el grupo.</li>
+<li>Evita quedarte en Profanar: su crecimiento se acelera rápidamente si los jugadores reciben daño.</li>
+</ul>
+</li>
+<li>
+<p><strong>Superposición de Profanar y Val'kyrs:</strong></p>
+<ul>
+<li>Apílense bajo la pierna derecha del LK antes de que aparezcan las Val'kyrs.</li>
+<li>Si eres el objetivo de Profanar, muévete hacia el borde derecho mientras los demás se mueven hacia la izquierda.</li>
+<li>La coordinación aquí es crucial para evitar colocar Profanar en los caminos de las Val'kyrs.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h4 id="finalizando-la-fase-2"><strong>Finalizando la Fase 2</strong> </h4>
+<ul>
+<li>El equilibrio entre <strong>apilarse</strong> (para Val'kyrs) y <strong>dispersarse</strong> (para Profanar) continúa hasta que el LK alcance el <strong>40% de vida</strong>.</li>
+<li>En este punto, comienza la segunda <strong>Fase de Transición</strong>.</li>
+</ul>
+<hr>
+<h3 id="segunda-fase-de-transición"><strong>Segunda Fase de Transición</strong> </h3>
+<p><strong>Mecánicas clave:</strong></p>
+<ul>
+<li>Idéntica a la primera transición, pero con un Espíritu Furioso adicional (4 en total).</li>
+</ul>
+<p><strong>Posicionamiento:</strong></p>
+<ul>
+<li>Dispérsense alrededor del anillo exterior para evitar la superposición de <strong>Dolor y Sufrimiento</strong> y otras mecánicas.</li>
+<li><strong>Asignaciones de tanques:</strong>
+<ul>
+<li>El MT toma los dos primeros Espíritus Furiosos.</li>
+<li>El OT toma los dos últimos.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Estrategia:</strong></p>
+<ol>
+<li>Usa <strong>Heroísmo/Ansia de Sangre</strong> cuando aparezcan los dos últimos Espíritus Furiosos.</li>
+<li>Usa todos los enfriamientos y DPS explosivo para eliminar los espíritus restantes antes de entrar en la Fase 3.</li>
+</ol>
+<p>La fase termina después de <strong>1 minuto</strong>, dando paso a la <strong>Fase 3</strong>. Es posible que dos Espíritus Furiosos sigan vivos al comenzar la Fase 3: prioriza matarlos de inmediato.</p>
+<h3 id="fase-3">Fase 3 </h3>
+La plataforma externa colapsa, así que deben moverse hacia el centro nuevamente.<br>
+En esta fase no nos apilaremos en el medio, sino en los lados de la sala.<br>
+Los adds restantes (<strong>Espíritus Furiosos</strong>) deben ser kiteados cerca del Lich King y eliminados lo más rápido posible.<br>
+<h4 id="posicionamiento-2"><strong>Posicionamiento:</strong> </h4>
+<img src="imgs/LK6.png" alt="" srcset="">
+<p>Esto es solo un ejemplo de cómo apilarse: pueden apilarse en múltiples puntos, pero lo importante es permanecer detrás del Lich King, estar apilados y posicionarse cerca del borde de la sala.</p>
+<p>Todos se apilarán detrás del Lich King debido a una habilidad llamada <strong>Espíritus Viles</strong>.</p>
+<ul>
+<li><strong>Espíritus Viles:</strong> Aparecen encima del Lich King y, después de un tiempo, seleccionarán a jugadores aleatorios como objetivo, descenderán y explotarán, haciendo aproximadamente el 80% del HP de un DPS en un radio relativamente amplio.</li>
+<li>Una vez que los espíritus aparezcan, el MT (Main Tank) y todos los demás deben moverse al otro lado de la sala. Esto se hace porque los espíritus se dirigen a jugadores aleatorios y, al moverse al otro lado, los espíritus se agruparán más. Esto es crucial, ya que facilita absorber el daño de los espíritus (<strong>Soaking</strong>).</li>
+</ul>
+<hr>
+<h4 id="absorber-daño-de-los-espíritus-viles"><strong>Absorber daño de los Espíritus Viles:</strong> </h4>
+<p>Se necesitan jugadores designados para absorber el daño:</p>
+<ul>
+<li>Normalmente, dos Sacerdotes Sombras (Shadow Priests) pueden encargarse, alternando sus <strong>Dispersiones</strong>:
+<ul>
+<li>Un Sacerdote absorbe una ola de espíritus, y el otro la siguiente.</li>
+</ul>
+</li>
+<li>Si un Sacerdote no puede absorber o no hay dos Sacerdotes Sombras en la raid, otros pueden encargarse:
+<ul>
+<li>Un Off Tank.</li>
+<li>Un Guerrero con <strong>Muro de Escudo</strong>.</li>
+<li>Un Druida feral en forma de oso con <strong>Piel de Corteza</strong> y <strong>Instintos de Supervivencia</strong>.</li>
+<li>Un Paladín con <strong>Protección Divina</strong>.</li>
+<li>Hay muchas opciones.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h4 id="consideraciones-para-otras-clases"><strong>Consideraciones para otras clases:</strong> </h4>
+<ul>
+<li>Los Cazadores (Hunters) pueden ignorar el apilamiento gracias a <strong>Fingir Muerte</strong>. Si un espíritu los selecciona, usen <strong>Fingir Muerte</strong>, y el espíritu se dirigirá hacia el grupo principal y se apilará con los demás.</li>
+<li>Cualquier DPS a distancia técnicamente puede ignorar el apilamiento, ya que pueden sobrevivir a una explosión de un espíritu, pero ser golpeado por dos significa la muerte, así que tengan cuidado.</li>
+</ul>
+<hr>
+<h3 id="otras-habilidades-importantes-en-la-fase-3">Otras habilidades importantes en la Fase 3: </h3>
+<p><strong>Profanar:</strong></p>
+<ul>
+<li>Igual que en la Fase 2: dispersarse.</li>
+<li>No hay Val'kyrs en esta fase, lo que facilita el movimiento para evitar Profanar.</li>
+</ul>
+<p><strong>Segador de Almas:</strong></p>
+<ul>
+<li>Igual que en la Fase 2: los tanques deben tener una rotación de habilidades defensivas para sobrevivir al daño.</li>
+</ul>
+<p><strong>Cosechar Alma:</strong><br>
+El Lich King comienza a absorber el alma de un jugador hacia su espada, aplicando un <strong>debuff</strong> a esa persona. Este debuff causa más del 100% del HP del objetivo, así que deben curarlos o morirán.</p>
+<hr>
+<h4 id="dentro-de-frostmourne">Dentro de Frostmourne: </h4>
+<ul>
+<li>Después de ser absorbido, serás transportado dentro de <strong>Frostmourne</strong>, donde habrá dos NPCs:
+<ul>
+<li><strong>Guardián Espiritual</strong> (enemigo).</li>
+<li><strong>Terenas Menethil</strong> (aliado).</li>
+</ul>
+</li>
+</ul>
+<ol>
+<li>
+<p><strong>Eliminación del Guardián Espiritual:</strong></p>
+<ul>
+<li>Terenas hace suficiente daño para matarlo, pero debes interrumpir su habilidad <strong>Destruir Alma</strong>, que matará a Terenas si el lanzamiento se completa.</li>
+<li>Si no tienes un <strong>interrupt</strong>, puedes disipar a Terenas para eliminar el efecto.</li>
+</ul>
+</li>
+<li>
+<p><strong>Curar a Terenas:</strong></p>
+<ul>
+<li>Si el Guardián Espiritual no muere rápidamente, cúralo para que no fallezca.</li>
+<li>Si Terenas muere, tú también morirás, y el Lich King se enfurecerá fuera de Frostmourne, causando muertes masivas.</li>
+</ul>
+</li>
+<li>
+<p>Si el Guardián Espiritual muere, serás enviado de vuelta al exterior.</p>
+</li>
+</ol>
+<hr>
+<h3 id="final-del-combate">Final del combate: </h3>
+<p>Cuando el Lich King llega al 10% de vida, lanzará <strong>Furia de Frostmourne</strong>, lo que matará a todos, finalizando el combate.<br>
+Después de un poco de roleplay, podrás resucitar y derrotar al Lich King.</p>
+<hr>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
